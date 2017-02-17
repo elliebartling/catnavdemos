@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="dist/app.css">
+  </head>
+  <body id="sidenav">
+    <nav id="topnav">
+      <img src="images/m-logo-thicker.svg" />
+      <div class="cart">
+        <a href="#">cart</a>
+      </div>
+    </nav>
+    <div id="app">
+      <div id="subnav">
+        <ul class="nav">
+          <li><a class="active" href="#">jewelry</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+        <ul class="jewelry nav">
+          <li><a href="#">everything</a></li>
+          <li><a class="active" href="#">necklaces</a></li>
+          <li><a href="#">bolos</a></li>
+          <li><a href="#">rings</a></li>
+          <li><a href="#">earrings</a></li>
+          <li><a href="#">bracelets</a></li>
+          <li><a href="#">sale</a></li>
+        </ul>
+        <ul class="materials nav">
+          <li><a class="active" href="#">all materials</a></li>
+          <li><a href="#">silver</a></li>
+          <li><a href="#">gold</a></li>
+          <li><a href="#">glass</a></li>
+          <li><a href="#">leather</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="item" v-for="i in items">
+          <img :src="i.src"/>
+          <div class="item-details">
+            <div class="item-title"><p>lonely traffic cop</p></div>
+            <div class="item-price"><p>$400</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.0.0/masonry.pkgd.min.js"></script>
+    <script src="dist/app.js"></script>
+  </body>
+</html>

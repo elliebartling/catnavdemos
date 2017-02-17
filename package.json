@@ -1,0 +1,30 @@
+{
+  "name": "catnavdemos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+    "hmr": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "laravel-mix": "^0.7.5",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "masonry-layout": "^4.1.1",
+    "unsplash": "^4.1.0",
+    "unsplash-js": "^4.5.0",
+    "vue-masonry": "github:ett-hmatsumoto/vue-masonry",
+    "vue-waterfall": "^1.0.5"
+  }
+}
