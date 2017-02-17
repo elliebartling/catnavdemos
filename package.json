@@ -25,6 +25,7 @@
     "unsplash": "^4.1.0",
     "unsplash-js": "^4.5.0",
     "vue-masonry": "github:ett-hmatsumoto/vue-masonry",
-    "vue-waterfall": "^1.0.5"
+    "vue-waterfall": "^1.0.5",
+    "whatwg-fetch": "^2.0.2"
   }
 }

@@ -1,3 +1,4 @@
+import 'whatwg-fetch'; 
 import Unsplash from 'unsplash-js';
 const unsplash = new Unsplash({
   applicationId: "8be22817057bb90cda5aa095e3b870dc81d4c0bdd8f2d42addff54e33e942ae8",
