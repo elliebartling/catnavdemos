@@ -1,4 +1,4 @@
-import 'whatwg-fetch'; 
+import 'whatwg-fetch';
 import Unsplash from 'unsplash-js';
 const unsplash = new Unsplash({
   applicationId: "8be22817057bb90cda5aa095e3b870dc81d4c0bdd8f2d42addff54e33e942ae8",
@@ -37,10 +37,15 @@ var app = new Vue({
     },
     getRandomImage: function() {
       var imageHeights = [300, 700, 300, 300]
-      var imgNum = Math.floor(Math.random() * (1084 - 700) + 700)
+      var imgNum = Math.floor(Math.random() * (14 - 1) + 1)
       var imgSize = imageHeights[Math.floor(Math.random() * imageHeights.length)]
       // return uh(300,imgSize, 'image='+ imgNum)
-      return "http://unsplash.it/g/300/" + imgSize + "/?random"
+      // return "http://unsplash.it/g/300/" + imgSize + "/?random"
+      return '/images/products/unsplash-' + imgNum + '.jpg'
+    },
+    getRandomSize: function() {
+      var imageHeights = [300, 700, 300, 300]
+      return imageHeights[Math.floor(Math.random() * imageHeights.length)]
     }
   },
   mounted() {

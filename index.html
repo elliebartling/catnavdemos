@@ -35,7 +35,7 @@
       </div>
       <div class="content">
         <div class="item" v-for="i in items">
-          <img :src="i.src"/>
+          <img :src="i.src" :height="getRandomSize()"/>
           <div class="item-details">
             <div class="item-title"><p>lonely traffic cop</p></div>
             <div class="item-price"><p>$400</p></div>
