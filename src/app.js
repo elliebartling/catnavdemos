@@ -41,7 +41,11 @@ var app = new Vue({
       var imgSize = imageHeights[Math.floor(Math.random() * imageHeights.length)]
       // return uh(300,imgSize, 'image='+ imgNum)
       // return "http://unsplash.it/g/300/" + imgSize + "/?random"
-      return '/images/products/unsplash-' + imgNum + '.jpg'
+      var prefix = ''
+      if(window.location.href.includes('github')) {
+        prefix = '/catnavdemos'
+      }
+      return prefix + '/images/products/unsplash-' + imgNum + '.jpg'
     },
     getRandomSize: function() {
       var imageHeights = [300, 700, 300, 300]
